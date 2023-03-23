@@ -1,0 +1,29 @@
+
+@font-face {
+    src: url("../fonts/Karla-Regular.ttf");
+    font-weight: 400;
+    font-family: Karla;
+}
+
+@font-face {
+    src: url("../fonts/Karla-Light.ttf");
+    font-weight: 200;
+    font-family: Karla;
+}
+
+@font-face {
+    src: url("../fonts/Karla-Medium.ttf");
+    font-weight: 600;
+    font-family: Karla;
+}
+
+@font-face {
+    src: url("../fonts/Karla-Bold.ttf");
+    font-weight: 800;
+    font-family: Karla;
+}
+
+@font-face {
+    src: url("../fonts/PlayfairDisplay-Regular.ttf");
+    font-family: Fair;
+}

@@ -1,0 +1,364 @@
+
+header {
+    width: 100%;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 96px;
+    height: 50px;
+}
+
+
+.right-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+}
+
+.bar-icon {
+    width: 18px;
+}
+
+.currency {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    height: 100%;
+}
+
+.currency p {
+    position: relative;
+    font-size: 16px;
+    color: black;
+    font-family: Karla;
+    font-weight: 200;
+}
+
+.currency img {
+    width: 8px;
+    height: 5px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.menu-category {
+    text-decoration: none;
+    font-family: Karla;
+    font-weight: 400;
+    font-size: 13px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+
+.navbar a img {
+    width: 8px;
+    height: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar a {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    transition: .3s;
+}
+
+.dropdown-one-item {
+    overflow: hidden;
+    width: 230px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 26px;
+    color: white;
+    font-family: Karla;
+    font-weight: 200;
+    border-bottom: dimgray 1px solid;
+    transition: all 0.25s ease-in-out;
+}
+
+.dropdown-one {
+    overflow: hidden;
+    height: fit-content;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: all .25s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 44;
+}
+
+.navbar a:hover .dropdown-one {
+    position: absolute;
+    height: fit-content;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    visibility: visible;
+    opacity: 1;
+    z-index: 44;
+}
+
+.dropdown-one-item:hover {
+    overflow: hidden;
+    width: 230px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 10px 26px;
+    color: lightgray;
+    font-family: Karla;
+    font-weight: 200;
+    border-bottom: dimgray 1px solid;
+}
+
+.shop-menu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: -300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 35px;
+    gap: 25px;
+    background-color: #333;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .25s ease-in-out;
+    z-index: 44;
+}
+
+.shop-menu p {
+    font-family: Karla;
+    font-weight: 200;
+    color: white;
+    width: 200px;
+    font-size: 14px;
+    border-bottom: 1px solid dimgray;
+    padding: 10px;
+    transition: .25s ease-in-out;
+}
+
+.shop-menu p:hover {
+    font-family: Karla;
+    font-weight: 200;
+    color: lightgray;
+    width: 200px;
+    font-size: 14px;
+    border-bottom: 1px solid dimgray;
+    padding: 10px;
+}
+
+
+.shop-menu p:nth-of-type(1) {
+    font-family: Karla;
+    font-weight: 600;
+    color: white;
+    width: 200px;
+    font-size: 14px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+
+#menu-cap {
+    width: 190px;
+    height: 209px;
+}
+
+.navbar a:hover .shop-menu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: -300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 35px;
+    gap: 25px;
+    background-color: #333;
+    visibility: visible;
+    opacity: 1;
+    z-index: 44;
+}
+
+
+.currency-drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+    top: 100%;
+    background-color: #333;
+    visibility: hidden;
+    opacity: 0;
+    transition: .25s ease-in-out;
+    z-index: 44;
+}
+
+.currency-drop p {
+    text-align: center;
+    font-family: Karla;
+    font-weight: 200;
+    color: white;
+    width: 80px;
+    font-size: 14px;
+    border-bottom: 1px solid dimgray;
+    padding: 10px;
+    transition: .25s ease-in-out;
+}
+
+.currency-drop p:hover {
+    text-align: center;
+    font-family: Karla;
+    font-weight: 200;
+    color: lightgray;
+    width: 80px;
+    font-size: 14px;
+    border-bottom: 1px solid dimgray;
+    padding: 10px;
+    transition: .25s ease-in-out;
+    cursor: pointer;
+}
+
+
+.currency:hover .currency-drop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: -20px;
+    top: 100%;
+    background-color: #333;
+    visibility: visible;
+    opacity: 1;
+    z-index: 44;
+}
+
+.hamb-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+#menu {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: calc(50% - 15px)
+}
+
+#menu:hover {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: calc(50% - 15px)
+}
+
+
+#close {
+    width: 20px;
+    height: 20px;
+    display: none;
+    position: absolute;
+    left: calc(50% - 15px)
+}
+
+#close:hover {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: none;
+    position: absolute;
+    left: calc(50% - 15px)
+}
+
+
+.nav-horison {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: .3s ease-in-out;
+}
+
+.nav-horison-item {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid dimgray;
+    transition: .3s;
+}
+
+.nav-horison-item:hover {
+    background-color: dimgray;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid dimgray;
+}
+
+
+.nav-horison-item>p{
+    font-size: 14px;
+    font-family: Karla;
+    font-weight: 200;
+    color: #fff;
+}
+
+
+
+
