@@ -27,6 +27,7 @@ footer{
 }
 
 
+
 .footer-box>p{
     font-size: 14px;
     font-family: Karla;
@@ -108,23 +109,29 @@ footer{
 }
 
 
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1450px) {
     .footer-wrapper{
-        width: 85vw;
+        display: grid;
         gap: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
 
     .footer-box{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 25px;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    .footer-wrapper{
+        display: grid;
+        gap: 50px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .footer-box{
         width: 100%;
     }
 

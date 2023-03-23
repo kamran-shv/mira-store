@@ -6,7 +6,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 }
+
 
 #logo {
     width: 96px;
@@ -274,7 +276,7 @@ a {
 }
 
 .hamb-button {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -361,4 +363,18 @@ a {
 
 
 
+
+@media only screen and (max-width: 1000px){
+   .navbar{
+       display: none;
+   }
+
+    .hamb-button{
+        display: flex;
+    }
+
+    .right-bar{
+        gap: 18px;
+    }
+}
 
