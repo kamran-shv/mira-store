@@ -8,29 +8,33 @@ let horMenu = document.querySelectorAll('.nav-horison')[0];
 let sliderState = false;
 
 
- btnRight.addEventListener('click', () =>{
-     if (sliderState === false){
-         firstImg.style.left = '-100%';
-         secondImg.style.left = '0';
-         sliderState = true;
-     }else{
-         firstImg.style.left = '0';
-         secondImg.style.left = '100%';
-         sliderState = false;
-     }
- })
+if (btnRight !== undefined){
+    btnRight.addEventListener('click', () =>{
+        if (sliderState === false){
+            firstImg.style.left = '-100%';
+            secondImg.style.left = '0';
+            sliderState = true;
+        }else{
+            firstImg.style.left = '0';
+            secondImg.style.left = '100%';
+            sliderState = false;
+        }
+    })
+}
 
-btnLeft.addEventListener('click', () =>{
-    if (sliderState === true){
-        firstImg.style.left = '0';
-        secondImg.style.left = '100%';
-        sliderState = false;
-    }else{
-        firstImg.style.left = '-100%';
-        secondImg.style.left = '0';
-        sliderState = true;
-    }
-})
+if (btnLeft !== undefined){
+    btnLeft.addEventListener('click', () =>{
+        if (sliderState === true){
+            firstImg.style.left = '0';
+            secondImg.style.left = '100%';
+            sliderState = false;
+        }else{
+            firstImg.style.left = '-100%';
+            secondImg.style.left = '0';
+            sliderState = true;
+        }
+    })
+}
 
 menuBtn.addEventListener('click', () =>{
     horMenu.style.height = '292px';
