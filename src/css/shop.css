@@ -3,8 +3,7 @@
 @import "./footer.css";
 @import "./main.css";
 
-
-.head-context{
+.head-context {
     width: 100%;
     height: 260px;
     background-color: #F6F6F6;
@@ -15,25 +14,22 @@
     align-items: center;
     margin-bottom: 120px;
 }
-
-.head-context p:nth-of-type(1){
+.head-context p:nth-of-type(1) {
     font-family: Fair;
     font-size: 30px;
     color: #1f1f1f;
     font-weight: normal;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
-
-.head-context p:nth-of-type(2), a{
+.head-context p:nth-of-type(2), a {
     font-family: Karla;
     font-size: 15px;
     color: #1f1f1f;
     font-weight: 600;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
-
-.filter{
+.filter {
     width: 100%;
     height: fit-content;
     display: flex;
@@ -43,17 +39,14 @@
     margin-bottom: 50px;
     z-index: 300;
 }
-
-.filter-left{
+.filter-left {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
-    z-index: 300;
 }
-
-.filter-left-card{
+.filter-left-card {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -62,24 +55,20 @@
     gap: 10px;
     padding: 10px 10px;
     border: 1px solid lightgray;
-    z-index: 300;
 }
-
-.filter-left-card>p{
+.filter-left-card > p {
     font-size: 14px;
     font-family: Karla;
     font-weight: 400;
     color: #1f1f1f;
     z-index: 300;
 }
-
-.filter-left-card>img{
+.filter-left-card > img {
     width: 15px;
     height: 15px;
     z-index: 300;
 }
-
-.filter-right{
+.filter-right {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -88,23 +77,20 @@
     padding: 10px 10px;
 }
 
-
-.filter-right>p{
+.filter-right > p {
     font-size: 14px;
     font-family: Karla;
     font-weight: 400;
     color: #1f1f1f;
-
 }
-
-.filter-right>select{
+.filter-right > select {
     border: 0;
     color: #1f1f1f;
     font-family: Karla;
     font-size: 14px;
 }
-
-.filter-drop{
+.filter-drop {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -119,20 +105,19 @@
     top: 100%;
     border: 1px solid lightgray;
     transition: .25s ease-in-out;
-    z-index: 300;
+    z-index: 500;
     float: left;
 }
-
-.filter-drop>p{
+.filter-drop > p {
     width: 100%;
     padding: 5px;
     font-size: 14px;
     font-family: Karla;
     font-weight: 400;
     color: #1f1f1f;
+    z-index: 500;
 }
-
-.filter-drop>p:hover{
+.filter-drop > p:hover {
     width: 100%;
     padding: 5px;
     background-color: whitesmoke;
@@ -142,8 +127,80 @@
     font-weight: 400;
     color: #1f1f1f;
 }
-
-.filter-left-card:hover .filter-drop{
+.filter-left-card:hover .filter-drop {
     visibility: visible;
     opacity: 1;
+}
+.page-swap {
+    margin-top: 100px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-swap-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.page-swap-box p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    font-family: Karla;
+    font-weight: 400;
+    border: 1px solid gray;
+    transition: .3s ease-in-out;
+}
+
+.page-swap-box p:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    font-family: Karla;
+    font-weight: 400;
+    border: 1px solid gray;
+    border-color: black;
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.page-swap-box img {
+    width: 10px;
+    height: 10px;
+}
+.border-black {
+    border-color: black !important;
+}
+
+
+@media only screen and (max-width: 1000px){
+    .filter-left{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .filter{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    .filter-left{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
 }
