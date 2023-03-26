@@ -230,7 +230,7 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
     .nested-wrapper{
         width: 90%;
     }
